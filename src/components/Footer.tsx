@@ -120,17 +120,11 @@ export default function Footer({ lang }: FooterProps) {
                   <ShieldCheck className="w-4 h-4 text-teal-400" />
                   {lang === 'ko' ? '안심 여행 보장 안내' : 'Safe Travel Guarantee'}
                 </h4>
-                <p className="text-xs leading-relaxed text-gray-400 mb-2">
+                <p className="text-xs leading-relaxed text-gray-400">
                   {lang === 'ko'
                     ? '검증된 정식 등록 로컬 여행사만 입점하여 안전한 투어를 보장합니다. 전 상품 안심 에스크로 보호 및 3일 전 100% 환불을 약속합니다.'
                     : 'Only certified and verified local agencies are onboarded. Full escrow custody & 100% refund up to 3 days prior guaranteed.'}
                 </p>
-                <button
-                  onClick={openPolicy('refund')}
-                  className="inline-block px-2.5 py-1 bg-slate-800 hover:bg-slate-700 text-teal-400 rounded text-[11px] font-medium border border-teal-500/20 transition cursor-pointer"
-                >
-                  {lang === 'ko' ? '안심 환불 보장 규정 보기 →' : 'View Refund Guarantee Terms →'}
-                </button>
               </div>
             )}
 
